@@ -1,0 +1,11 @@
+<div>
+    <Table>
+        <tr *ngFor="let row of board">
+            <td *ngFor="let col of row" 
+                (click)="onClick(col.id)"
+                [ngClass]="col.color">
+                {{ col.id }}
+            </td>
+        </tr>
+    </Table>
+</div>

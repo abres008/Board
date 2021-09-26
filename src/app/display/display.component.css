@@ -1,0 +1,40 @@
+* {
+    z-index: 0;
+}
+
+:host {
+    --width: 75px;
+    --height: 75px;
+}
+
+table {
+    position: fixed;
+    top: 10;
+    left: 10;
+
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-collapse: separate;
+    border-spacing: 0px;
+}
+
+td {
+    box-sizing: border-box;
+    width: var(--width);
+    height: var(--height);
+    text-align: center;
+}
+
+td:active {
+    border: 5px solid blue;
+}
+
+.black {
+    color: black;
+    background-color: black;
+}
+
+.white {
+    color: white;
+    background-color: white;
+}
